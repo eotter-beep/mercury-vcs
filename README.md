@@ -16,4 +16,5 @@ Mercury VCS is a lightweight, beginner-friendly version control system with feat
   - `newrule <message>` – Create a `commitrules.txt` file.
   - `new-ver <version>` – Create a new Mercury version.
   - `version` – Show Mercury VC version info.
+  - `--ignore-unique` – Ignore Uniqueness
 - **Lightweight and Focused** – Avoids Git complexity while still providing essential version control functionality.
