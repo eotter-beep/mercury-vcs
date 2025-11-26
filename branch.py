@@ -18,3 +18,5 @@ def commitrules(message):
     os.system("touch commitrules.txt")
     os.system(f"echo '{message}' >> commitrules.txt")
     print("If you want to decorate your rules file, you may by editing the .mrcrules file.")
+def newbranch(branch):
+    os.system(f'mkdir {branch}')

@@ -55,6 +55,10 @@ def list_ver():
 def newrule(msg):
     """Create a commitrules.txt file."""
     branch.commitrules(message=f"{msg}")
+@cli.command()
+@click.argument('file')
+def new_branch(file):
+    branch.newbranch(f"{file}")
 
 if __name__ == '__main__':
     cli(obj={})
