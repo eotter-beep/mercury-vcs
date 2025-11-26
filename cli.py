@@ -7,10 +7,11 @@ import os
 def cli(ignore_unique):
     pass
 @cli.command()
-def mercuryversion():
+def version():
     """Show the version of Mercury."""
-    print("Mercury VC 1.0.0")
+    print("Mercury VCS 1.0.1")
     print("Mercury Official CLI Tool")
+    print("Any bugs? We'd appreciate a bug report on 'https://github.com/eotter-beep/mercury-vcs/issues'!")
     print("Use --help to get help information")
 @cli.command()
 @click.argument('file')
@@ -51,7 +52,7 @@ def list_ver():
     branch.readversions()
 @cli.command()
 @click.argument('msg')
-def create_rules(msg):
+def newrule(msg):
     """Create a commitrules.txt file."""
     branch.commitrules(message=f"{msg}")
 

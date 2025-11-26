@@ -13,7 +13,7 @@ Mercury VCS is a lightweight, beginner-friendly version control system with feat
   - `commit-msg <message>` – Add a commit message (supports spaces).
   - `restart-branch <branch>` – Restart a branch quickly.
   - `list-ver` – List all repository versions.
-  - `create-rules <message>` – Create a `commitrules.txt` file.
+  - `newrule <message>` – Create a `commitrules.txt` file.
   - `new-ver <version>` – Create a new Mercury version.
-  - `mercuryversion` – Show Mercury VC version info.
+  - `version` – Show Mercury VC version info.
 - **Lightweight and Focused** – Avoids Git complexity while still providing essential version control functionality.
