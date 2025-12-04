@@ -1,3 +1,4 @@
+#!/usr/bin/env python
 import click
 import savef
 import branch
@@ -9,7 +10,7 @@ def cli(ignore_unique):
 @cli.command()
 def version():
     """Show the version of Mercury."""
-    print("Mercury VCS 1.0.1")
+    print("Mercury VCS 1.0.3")
     print("Mercury Official CLI Tool")
     print("Any bugs? We'd appreciate a bug report on 'https://github.com/eotter-beep/mercury-vcs/issues'!")
     print("Use --help to get help information")
@@ -59,6 +60,10 @@ def newrule(msg):
 @click.argument('file')
 def new_branch(file):
     branch.newbranch(f"{file}")
-
+@cli.command()
+def bugtracker():
+    """Create a Bug Tracker within Mercury"""
+    os.system("touch .mrcbug")
+    os.system("echo '# Bug Tracker\n\nReport any reported bugs here!' > .mrcbug")
 if __name__ == '__main__':
     cli(obj={})
